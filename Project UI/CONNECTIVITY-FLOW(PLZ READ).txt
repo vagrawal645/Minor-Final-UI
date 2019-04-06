@@ -1,0 +1,7 @@
+FLOW
+======
+homepage2-->forgot pw-->recover1-->recover2
+homepage1-->signup-->Register as Teacher/Student
+homepage1-->homepage2-->Teacher/Student
+Teacher-->Teacher's Folder-->Create Test
+Student-->Student's Folder-->Enter Test ID-->Give Test
