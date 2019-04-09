@@ -66,7 +66,7 @@ export default class App extends Component {
         />
       </View>
       <TouchableOpacity style = {styles.btn}>
-        <Text style = {styles.text}>Submit</Text>
+        <Text style = {styles.text1}>Submit</Text>
       </TouchableOpacity>
       </ImageBackground>
     );
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     marginHorizontal:25,
     backgroundColor:'#770A0A',
     color:'white',
-    marginTop:125,
+    marginTop:20,
     justifyContent:'center'
   },
   input2:{
@@ -114,7 +114,15 @@ const styles = StyleSheet.create({
   },
   text:{
     color:'white',
+    fontSize:44,
+    textAlign:'center'
+  },
+  text1:{
+    color:'white',
     fontSize:24,
     textAlign:'center'
   },
+  header:{
+    marginTop:120
+  }
 });
