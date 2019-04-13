@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,ImageBackground,TextInput,Dimensions,TouchableOpacity} from 'react-native';
 //type Props = {};
-import bgimage from './Images/bg2.jpg';
+import bgimage from './Images/bg2.jpeg';
 const {width:WIDTH} = Dimensions.get('window');
 export default class App extends Component {
-  
-  render() {
+  render(){
     return (
       <ImageBackground 
         source={bgimage}
@@ -33,20 +32,27 @@ export default class App extends Component {
           </View>
           <View style = {styles.options2}>
             <View style = {styles.options3}>
-            <TouchableOpacity style={styles.options4}><Text style = {styles.text1}>Calcutta</Text></TouchableOpacity>
+            <Text style = {styles.options4}>Calcutta</Text>
             </View>
             <View style = {styles.options3}>
-            <TouchableOpacity style={styles.options4}><Text style = {styles.text1}>Bhopal</Text></TouchableOpacity>
+            <Text style = {styles.options4}>Bhopal</Text>
             </View>
             <View style = {styles.options3}>
-            <TouchableOpacity style={styles.options4}><Text style = {styles.text1}>Indore</Text></TouchableOpacity>
+            <Text style = {styles.options4}>Indore</Text>
             </View>
             <View style = {styles.options3}>
-            <TouchableOpacity style={styles.options4}><Text style = {styles.text1}>Jaipur</Text></TouchableOpacity>
+            <Text style = {styles.options4}>Jaipur</Text>
             </View>
           </View>
         </View>
-        
+      </View>
+      <View>
+          <TextInput
+              style={styles.input1}
+              placeholder='Your Answer'
+              placeholderTextColor='white'
+              underlineColorAndroid='transparent'
+          />
       </View>
       <View style = {styles.btnView}>
         <TouchableOpacity style = {styles.btn}>
@@ -68,46 +74,46 @@ const styles = StyleSheet.create({
   },
   text:{
     color:'white',
-    fontSize:27,
+    fontSize:20,
     textAlign:'center',
   },
    text1:{
     marginTop:10,
     color:'white',
-    fontSize:20,
+    fontSize:16,
     marginHorizontal:6,
     position:'relative',
     flexDirection:'column',
     textAlign:'center'
   },
-  // input1:{
-  //   width:WIDTH-35,
-  //   height:45,
-  //   fontSize:24,
-  //   marginHorizontal:45,
-  //   backgroundColor:'#770A0A',
-  //   color:'#a5a9af',
-  //   marginTop:10,
-  //   textAlign:'center'
-  // },
+  input1:{
+    width:WIDTH-26,
+    height:45,
+    fontSize:20,
+    marginHorizontal:3,
+    backgroundColor:'#770A0A',
+    color:'white',
+    marginTop:10,
+    textAlign:'center'
+  },
   btn:{
     width:WIDTH-200,
     height:45,
     justifyContent:'center',
     backgroundColor:'#302E2E',
-    alignItems:'center'
+    alignItems:'center',
+    borderRadius:7
   },
   btnView:{
     flex:1,
     height:45,
     justifyContent:'center',
-    marginTop:4,
     alignItems:'center'
   },
   quiz:{
     flex:4,
     alignItems:'center',
-    marginTop:150,
+    marginTop:140,
     backgroundColor:'#302E2E',
     width:WIDTH-25,
     height:45,
@@ -147,9 +153,14 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     backgroundColor:'#3d3b3b',
     marginVertical:3,
+    padding:10,
     marginRight:15,
     height:50,
     justifyContent:'center',
-    textAlign:'center'
+    textAlign:'center',
+    color:'white',
+    fontSize:16,
+    marginHorizontal:6,
+    position:'relative',
   }
 });
